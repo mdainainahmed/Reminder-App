@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder App</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Maven+Pro:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section id="header">
+        <div class="heading">Set a Remainder</div>
+        <div class="image">
+            <img src="images/image.png" alt="img">
+        </div>
+    </section>
+
+    <!-- Input Section -->
+    <section id="footer">
+            <div class="form-container">
+                <div class="Day">
+                    <div class="dayHeading">Select Day of the week:</div>
+                    <div class="daySelector">
+                        <label for="daySelector"></label>
+                        <select name="daySelector" id="daySelector">
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="Activity">
+                    <div class="activityHeading">Select Day of the week:</div>
+                    <div class="activitySelector">
+                        <label for="activitySelector"></label>
+                        <select name="activitySelector" id="activitySelector">
+                            <option value="wakeUp">Wake up</option>
+                            <option value="goToGym">Go to gym</option>
+                            <option value="Wednesday">Breakfast</option>
+                            <option value="meetings">Meetings</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="quickNap">Quick nap</option>
+                            <option value="goToLibrary">Go to library</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="goToSleep">Go to sleep</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="Time">
+                    <div class="timeHeading">Select Time:</div>
+                    <div class="timeSelector">
+                        <label for="timeSelector"></label>
+                        <input type="time" name="time" id="timeSelector" min="00:00">
+                    </div>
+                </div>
+                <div class="button">
+                    <button>Set Remainder</button>
+                </div>
+            </div>
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
