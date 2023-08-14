@@ -25,6 +25,6 @@ function setReminder() {
 }
 
 function playSound() {
-  const audio = new Audio("music/music.mp3");
+  const audio = new Audio("music.mp3");
   audio.play();
 }
